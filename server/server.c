@@ -255,19 +255,19 @@ int main()
                         else
                         {
                             printf("> [Error] '%s' cannot be accessed as read permissions are not granted.\n", fileName);
-                            guarenteedSend(client_socket_sender, "EEEEEEEEEEEEEEEEEE410", sizeof("EEEEEEEEEEEEEEEEEE410"));
+                            guarenteedSend(client_socket_sender, "EEEEEEEEEEEEEEEEEEE410", strlen("EEEEEEEEEEEEEEEEEEE410"));
                         }
                     }
                     else
                     {
                         printf("> [Error] '%s' is a directory.\n", fileName);
-                        guarenteedSend(client_socket_sender, "EEEEEEEEEEEEEEEEEE409", sizeof("EEEEEEEEEEEEEEEEEE409"));
+                        guarenteedSend(client_socket_sender, "EEEEEEEEEEEEEEEEEEE409", strlen("EEEEEEEEEEEEEEEEEEE409"));
                     }
                 }
                 else
                 {
                     printf("> [Error] '%s' not found.\n", fileName);
-                    guarenteedSend(client_socket_sender, "EEEEEEEEEEEEEEEEEE404", sizeof("EEEEEEEEEEEEEEEEEE404"));
+                    guarenteedSend(client_socket_sender, "EEEEEEEEEEEEEEEEEEE404", strlen("EEEEEEEEEEEEEEEEEEE404"));
                 }
             }
         }

@@ -232,15 +232,15 @@ int getFiles(int client_socket_sender, int client_socket_receiver, char **parsed
             {
                 if (response[0] == 'E')
                 {
-                    if (strcmp(response, "EEEEEEEEEEEEEEEEEE404") == 0)
+                    if (strcmp(response, "EEEEEEEEEEEEEEEEEEE404") == 0)
                     {
                         printf("> [Error] '%s' not found.\n", fileName);
                     }
-                    else if (strcmp(response, "EEEEEEEEEEEEEEEEEE409") == 0)
+                    else if (strcmp(response, "EEEEEEEEEEEEEEEEEEE409") == 0)
                     {
                         printf("> [Error] '%s' is a directory.\n", fileName);
                     }
-                    else if (strcmp(response, "EEEEEEEEEEEEEEEEEE410") == 0)
+                    else if (strcmp(response, "EEEEEEEEEEEEEEEEEEE410") == 0)
                     {
                         printf("> [Error] '%s' cannot be accessed as read permissions are not granted to the server\n", fileName);
                     }
