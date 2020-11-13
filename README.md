@@ -51,6 +51,7 @@ Following responses are received from client when a server is about to start tra
 |----------|-------------------------|
 | 0 | Client rejects the file |
 | 1 | Client accepts the file |
+
 This is to deal with the case when the file with same name already exists on client end. Hence client rejects the file.
 
 ## Some assumptions
